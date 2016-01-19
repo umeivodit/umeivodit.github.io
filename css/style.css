@@ -1,197 +1,399 @@
 @font-face {
-	font-family: 'proxima_nova_extrabold';
-	src: url('../fonts/proxima_nova_extrabold-webfont.eot');
-	src: url('../fonts/proxima_nova_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff'),
-	url('../fonts/proxima_nova_extrabold-webfont.ttf') format('truetype'),
-	url('../fonts/proxima_nova_extrabold-webfont.svg#proxima_nova_thextrabold') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'proxima_nova_extrabold';
+    src: url('../fonts/proxima_nova_extrabold-webfont.eot');
+    src: url('../fonts/proxima_nova_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff'),
+    url('../fonts/proxima_nova_extrabold-webfont.ttf') format('truetype'),
+    url('../fonts/proxima_nova_extrabold-webfont.svg#proxima_nova_thextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 @font-face {
-	font-family: 'proxima_nova_semibold';
-	src: url('../fonts/proxima_nova_semibold-webfont.eot');
-	src: url('../fonts/proxima_nova_semibold-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/proxima_nova_semibold-webfont.woff') format('woff'),
-	url('../fonts/proxima_nova_semibold-webfont.ttf') format('truetype'),
-	url('../fonts/proxima_nova_semibold-webfont.svg#proxima_nova_semibold') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'proxima_nova_semibold';
+    src: url('../fonts/proxima_nova_semibold-webfont.eot');
+    src: url('../fonts/proxima_nova_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/proxima_nova_semibold-webfont.woff') format('woff'),
+    url('../fonts/proxima_nova_semibold-webfont.ttf') format('truetype'),
+    url('../fonts/proxima_nova_semibold-webfont.svg#proxima_nova_semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 @font-face {
-	font-family: "OpenSansRegular";
-	src: url("../fonts/OpenSansRegular.eot");
-	src: url("../fonts/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/OpenSansRegular.woff") format("woff"),
-	url("../fonts/OpenSansRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
-	font-family: "OpenSansBold";
-	src: url("../fonts/OpenSansBold.eot");
-	src: url("../fonts/OpenSansBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/OpenSansBold.woff") format("woff"),
-	url("../fonts/OpenSansBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold.eot");
+    src: url("../fonts/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
-	font-family: "OpenSansExtraBold";
-	src: url("../fonts/OpenSansExtraBold.eot");
-	src: url("../fonts/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/OpenSansExtraBold.woff") format("woff"),
-	url("../fonts/OpenSansExtraBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+    font-family: "OpenSansExtraBold";
+    src: url("../fonts/OpenSansExtraBold.eot");
+    src: url("../fonts/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansExtraBold.woff") format("woff"),
+    url("../fonts/OpenSansExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
+
+html,
 body {
+    width: 100%;
+    height: 100%;
 }
-html, body {
 
-	height:100%;
-}
 body {
-	overflow-x:hidden;
-	background-color: #313131;
-	font-family: "OpenSansRegular";
-
-}
-.subtit {
-	display:block;
-	font-size:21px;
-	color: #b7b7b7;
-	margin: 0 auto;
-	margin-bottom:38px;
-
-}
-.logo {
-	margin-top:27px;
+    background-color: #313131;
+    font-family: "OpenSansRegular";
 }
 
-.middler {
-	width:100%;
-	height:100%;
-	display:table;
-}
-.tcmid {
-	display:table-cell;
-	vertical-align: middle;
-}
-.context {
-	margin:0 auto;
-	text-align:center;
-}
-.context h2 {
-	color:#fff;
-	margin:0px 3% 25px 3%;
-	font-family: "OpenSansExtraBold";
-	font-weight: normal;
-	text-align: center;
-	line-height: 120%;
-}
-.butt {
-	display:block;
-	margin:0px 0px 25px 0px;
-
-}
-
-.fixedbg {
-	background-image:url("../images/bg.jpg");
-	background-position: center top;
-	background-size:cover;
-}
-
-.fixedbg, .bg_under {
-	height:100%;
-	min-height:100%;
-}
-.logo, .made_works {
-	float:left;
-	margin-left:20px;
-}
 .top_line {
-	width:100%;
-	position:absolute;
-	top:0px;
+    width:100%;
+    position:absolute;
+    top:0px;
 }
 .top_line:before, .top_line:after, .footer_line:before, .footer_line:after  {
-	display:table;
-	content: '';
+    display:table;
+    content: '';
 }
 .top_line:after, .footer_line:after {
-	clear:both;
+    clear:both;
+}
+
+.butt {
+    display:block;
+    margin:0px 0px 25px 0px;
+}
+
+.butt a {
+    font-family: "OpenSansBold";
+    font-size: 12px;
+    background: #1aa820;
+    border-radius: 27px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 200px;
+    height: 54px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 19px;
+    letter-spacing: 1.5pt;
+}
+
+.butt a:hover {
+    background: #17941d;
 }
 
 .cbox {
-	margin-top:27px;
-	color:#fff;
-	text-align: left;
-	float:right;
-	margin-right:20px;
+    color:#fff;
+    text-align: right;
+    float:right;
+    margin-right: 20px;
+    margin-top: 16px;
+    width: 190px;
 }
 
-
-.cbox .tel, .cbox .email {
-	display:block;
+.cbox .tel, .cbox .email, .cbox .address {
+    display:block;
 }
+
 .cbox .tel {
-	color:#fff;
-	margin-bottom:10px;
-	font-size:20px;
-
+    color:#fff;
+    margin-bottom:3px;
+    font-size:20px;
 }
+
+.cbox .tel a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.cbox .tel a:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
 .cbox .email {
-	font-size:16px;
-	color:#98daf0;
+    font-size:16px;
+    margin-bottom:6px;
 }
 
 .cbox .email:hover a {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .cbox .email a {
-	text-decoration: none;
-	color: #dd5f5c;
-	font-size: 16px;
-}
-.butt a {
-	font-family: "OpenSansBold";
-	font-size: 12px;
-	background: #dd5f5c;
-	border-radius: 26px;
-	margin: 0 auto;
-	text-transform: uppercase;
-	width: 196px;
-	height: 33px;
-	display: block;
-	color: white;
-	text-decoration: none;
-	text-align: center;
-	padding-top: 19px;
-	letter-spacing: 1pt;
-}
-.butt a:hover {
-	background: #E06F6D;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
 }
 
-.logo {
-	font-family: 'proxima_nova_semibold';
-	font-size: 20px;
-	text-transform: uppercase;
-	padding-left: 65px;
-	width: 140px;
-	margin-bottom:20px;
-	margin-top: 12px;
-	margin-left: 15px;
-	letter-spacing: 1pt;
-	line-height: 135%;
-	padding-top: 5px;
-	color: white;
-	text-align: left;
+.cbox .address {
+    line-height: 1.2em;
+    font-size: 13px;
 }
-.logo span {
-	font-family: 'proxima_nova_extrabold';
+
+.cbox .address a {
+    text-decoration: none;
+    color: #b7b7b7;
+}
+
+.cbox .address:hover a {
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../assets/bg.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    color:#fff;
+    margin:0px 3% 25px 3%;
+    font-family: "OpenSansExtraBold";
+    font-weight: normal;
+    text-align: center;
+    line-height: 120%;
+    font-size: 22px;
+}
+
+header .header-content .header-content-inner p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #b7b7b7;
+    line-height: 1.5em;
+    margin-bottom:38px;
+}
+
+header .subtit {
+    color: #dd5f5c;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width : 319px) {
+    .logo {
+        float: none;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .cbox {
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 190px;
+        text-align: center;
+    }
+
+    header .header-content .header-content-inner h1 {
+        font-size:22px;
+        margin-top:200px;
+    }
+
+    header .header-content .header-content-inner p {
+        font-size:14px;
+    }
+}
+
+@media only screen and (min-width : 320px) {
+    .logo {
+        float: none;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .cbox {
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header .header-content .header-content-inner h1 {
+        font-size: 22px;
+        margin-top:200px;
+    }
+
+    header .header-content .header-content-inner p {
+        font-size:14px;
+    }
+}
+
+@media only screen and (min-width : 480px) {
+    .logo {
+        float:left;
+        margin: auto;
+        margin-top: 12px;
+        margin-left: 15px;
+    }
+
+    .cbox {
+        float:right;
+        margin: auto;
+        margin-right: 20px;
+        margin-top: 16px;
+        text-align: right;
+    }
+
+    header .header-content .header-content-inner h1 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width : 640px) {
+    header .header-content .header-content-inner h1 {
+        font-size: 30px;
+        margin-top:25px;
+    }
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner h1 {
+        margin-top: 60px;
+        font-size: 40px;
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size:21px;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    header .header-content .header-content-inner h1 {
+        margin-top: 25px;
+        font-size: 55px;
+    }
+}
+
+.bg-primary {
+    background-color: white;
+    color: black;
+}
+
+.bg-photo {
+    background-image: url(../assets/bg2.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: black;
+    color: white;
+}
+
+
+section {
+    min-height: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+section .section-container h2 {
+    margin:0px 3% 25px 3%;
+    font-family: "OpenSansExtraBold";
+    font-weight: normal;
+    text-align: center;
+    line-height: 120%;
+    font-size: 22px;
+}
+
+section .section-container .subtit {
+    font-size: 16px;
+    font-weight: 300;
+    color: #b7b7b7;
+    line-height: 1.5em;
+}
+
+section .section-title {
+    margin-bottom:38px;
+}
+
+@media(min-width:768px) {
+
+    section {
+        width:100%;
+        height:100%;
+        display:table;
+    }
+
+    .section-container {
+        display:table-cell;
+        vertical-align: middle;
+    }
+
+    section .section-container h2 {
+        font-size: 54px;
+    }
+
+    section .section-container .subtit {
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+
+    section .section-title {
+        margin-bottom:80px;
+    }
+}
+
+#avtos {
+
+}
+
+.avto {
+	width: 400px;
 }
