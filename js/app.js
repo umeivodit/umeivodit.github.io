@@ -1,42 +1,46 @@
-$(document).ready(function() {
+(function ($) {
 
-  /*
-   * Smooth scroll
-   */
+    skel
+    	.breakpoints({
+            xlarge: '(max-width: 1680px)',
+            large: '(max-width: 1280px)',
+            medium: '(max-width: 980px)',
+            small: '(max-width: 736px)',
+            xsmall: '(max-width: 480px)'
+        });
 
-  $('ul.navbar-nav a').smoothScroll({
-    offset: -50,
-    autoCoefficent: 2,
-  });
+    $(function () {
 
-  /*
-   * Project slides
-   */
+		jQuery.scrollDepth();
 
-  $("#lifehacker").responsiveSlides({
-    maxwidth: 320,
-    speed: 800,
-    pager: true
-  });
-});
+		$('.scrolly').click(function(e){
+			e.preventDefault();
+			$('#avtos').animatescroll({scrollSpeed:500});
+		});
 
+		$('#header').scrollex({
+    		enter: function() {
+        		$('.more').css('visibility', 'visible');
 
-/*
- * Google Map
- */
+   			},
+    		leave: function() {
+        		$('.more').css('visibility', 'hidden');
+    		}
+  		});
 
-google.maps.event.addDomListener(window, 'load', initialize);
-function initialize() {
-  var mapOptions = {
-    zoom: 16,
-    center: new google.maps.LatLng(54.308367,48.3875979)
-  }
-  var map = new google.maps.Map(document.getElementById('map_convas'), mapOptions);
-  // var image = 'images/beachflag.png';
-  var myLatLng = new google.maps.LatLng(54.308367,48.3875979);
-  var beachMarker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      // icon: image
-  });
-}
+        if (skel.vars.mobile) {
+            $body.addClass('is-mobile');
+        }
+        else {
+            skel
+                .on('-medium !medium', function () {
+                    $('body').removeClass('is-mobile');
+                })
+                .on('+medium', function () {
+                    $('body').addClass('is-mobile');
+                });
+        }
+
+	});
+
+})(jQuery);

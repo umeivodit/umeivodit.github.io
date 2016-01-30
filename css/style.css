@@ -59,6 +59,67 @@ body {
     font-family: "OpenSansRegular";
 }
 
+.arrow {
+  position: fixed;
+  padding-bottom: 30px;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+}
+
+.is-mobile .arrow {
+    visibility: none;
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    -moz-animation-name: bounce;
+    -o-animation-name: bounce;
+    animation-name: bounce;
+}
+
+.animated{
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+    animation-fill-mode:both;
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    -ms-animation-duration:2s;
+    -o-animation-duration:2s;
+    animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 40% {-webkit-transform: translateY(-10px);}
+    60% {-webkit-transform: translateY(-7px);}
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-10px);}
+    60% {-moz-transform: translateY(-7px);}
+}
+
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(-10px);}
+    60% {-o-transform: translateY(-7px);}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-4px);}
+}
+
 .top_line {
     width:100%;
     position:absolute;
@@ -138,7 +199,7 @@ body {
 
 .cbox .email a {
     text-decoration: none;
-    color: #fff;
+    color: #6666cc;
     font-size: 16px;
 }
 
@@ -394,6 +455,104 @@ section .section-title {
 
 }
 
-.avto {
-	width: 400px;
+#avtos .car {
+    padding: 20px;
+    border-width: 10px;
+    border-color: black;
+}
+
+.car div {
+	padding: 0 5px;
+}
+
+.car .car-img {
+	padding-bottom: 15px;
+}
+
+.car .car-title {
+    font-family: "OpenSansBold";
+}
+
+#work-flow .section-content {
+}
+
+.work-flow-item {
+}
+
+.work-flow-item div {
+    float: none;
+    margin: 20px auto;
+    text-overflow: clip;
+    display: block;
+	background-color: white;
+	color: black;
+	height: 400px;
+	width: 250px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: solid 1px #ccc;
+}
+
+.work-flow-item h3 {
+	height: 120px;
+	border-bottom: solid 1px #ccc;
+}
+
+.work-flow-item h3 span {
+    padding-top: 10px;
+    display: inline-block;
+}
+
+#contacts {
+    padding-bottom: 70px;
+}
+
+.contacts {
+    padding: 20px;
+}
+
+.contacts .tel, .contacts .email, .contacts .name {
+    display:block;
+}
+
+.contacts .name {
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.contacts .tel {
+    margin-bottom:10px;
+    font-size:20px;
+    color: #b7b7b7;
+}
+
+.contacts .tel a {
+    color: #b7b7b7;
+    text-decoration: none;
+}
+
+.contacts .tel a:hover {
+    color: #b7b7b7;
+    text-decoration: none;
+}
+
+.contacts .email {
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.contacts .email:hover a {
+    text-decoration: underline;
+}
+
+.contacts .email a {
+    text-decoration: none;
+    color: #6666cc;
+    font-size: 14px;
+}
+
+@media only screen and (min-width : 480px) {
+    .contacts .email a {
+        font-size: 20px;
+    }
 }
